@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FocusFlow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>⏳ FocusFlow</h1>
+
+  <!-- Task Input -->
+  <input type="text" id="taskInput" placeholder="Enter a task">
+  <button onclick="addTask()">Add Task</button>
+
+  <ul id="taskList"></ul>
+
+  <!-- Timer -->
+  <h2 id="timer">25:00</h2>
+  <button onclick="startTimer()">Start</button>
+  <button onclick="pauseTimer()">Pause</button>
+  <button onclick="resetTimer()">Reset</button>
+
+  <!-- Stats -->
+  <p>Sessions Completed: <span id="sessions">0</span></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
